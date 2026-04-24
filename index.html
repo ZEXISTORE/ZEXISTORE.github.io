@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZEXI - Jasa Nambah Like FF</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#020617,#0f172a);
+    color:white;
+    overflow-x:hidden;
+}
+
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:70px;
+    overflow:hidden;
+    z-index:1000;
+}
+
+/* VIDEO FULL BACKGROUND */
+.nav-video{
+    height:100%;
+    width:auto;
+    object-fit:contain; /* ini kunci utama */
+}
+.navbar{
+    height:43.2px; /* kecilin navbar */
+}
+
+/* ISI NAVBAR DI ATAS VIDEO */
+.nav-content{
+    position:relative;
+    z-index:2;
+    height:100%;
+    display:flex;
+    align-items:center;
+    padding:0 20px;
+}
+
+/* LOGO */
+.nav-left{
+    display:flex;
+    align-items:center;
+    gap:5px;
+}
+
+.logo{
+    width:80px;
+}
+
+.nav-left span{
+    font-family:'Orbitron';
+    color:#black;
+    text-shadow:0 0 10px #00f0ff;
+}
+
+/* LOADING */
+#loading{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:#020617;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+#loading h1{
+    font-family:'Orbitron';
+    color:#00f0ff;
+    font-size:24px;
+    margin-bottom:10px;
+    text-shadow:0 0 15px #00f0ff;
+}
+
+#loading p{
+    color:#aaa;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-family:'Orbitron';
+    font-size:32px;
+    color:#00f0ff;
+    text-shadow:0 0 20px #00f0ff;
+    opacity:0;
+    transform:translateY(20px);
+    transition:1s;
+}
+
+.hero p{
+    margin:15px 0;
+    color:#ccc;
+    opacity:0;
+    transform:translateY(20px);
+    transition:1s;
+}
+
+.btn{
+    padding:12px 25px;
+    background:#00f0ff;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 20px #00f0ff;
+}
+
+.price-logo{
+    width:70px;
+    margin-bottom:10px;
+    filter:drop-shadow(0 0 10px #00f0ff);
+    animation:float 2s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{ transform:translateY(0); }
+    50%{ transform:translateY(-5px); }
+    100%{ transform:translateY(0); }
+}
+.price-header{
+    display:flex;
+    flex-direction:column; /* ini kunci utama */
+    align-items:center;
+}
+
+.price-logo{
+    width:150px;
+    margin-bottom:10px;
+}
+.Lg{
+  width:250px;
+}
+
+.box small {
+    font-size: 12px;
+    color: #ccc;
+}
+</style>
+</head>
+
+<body>
+<div class="navbar">
+
+    <!-- VIDEO BACKGROUND -->
+    <video class="nav-video" autoplay muted loop playsinline>
+        <source src="vid.mp4" type="video/mp4">
+    </video>
+
+    <!-- ISI NAVBAR -->
+    <div class="nav-content">
+        <div class="nav-left">
+            <img src="Lg.png" class="logo">
+            <span>ZexiStore</span>
+        </div>
+    </div>
+
+</div>
+<!-- LOADING -->
+<div id="loading">
+    <img src="Lg.png" class="Lg"
+    <p id="loadingText">memuat...</p>
+</div>
+
+
+<section class="hero-new">
+
+    <div class="hero-container">
+
+        
+        <!-- KANAN (PRICE STYLE POSTER) -->
+        <div class="hero-right">
+<div class="price-header">
+    <img src="Lg.png" class="price-logo">
+    <h3 class="tag">PRICE LIST LIKE FF</h3>
+</div>
+            <h1>ZEXI STORE</h1>
+            <p>JASA NAMBAH LIKE FF • BY ZEXI</p>
+
+<div class="price-grid">
+
+    <div class="box">
+        2000 Like <i class="fa-solid fa-thumbs-up"></i><br>
+        <span>Rp 50.000</span><br>
+        <small>10 days finished</small>
+    </div>
+
+    <div class="box">
+        3000 Like <i class="fa-solid fa-thumbs-up"></i><br>
+        <span>Rp 70.000</span><br>
+        <small>10 days finished</small>
+    </div>
+
+    <div class="box">
+        5000 Like <i class="fa-solid fa-thumbs-up"></i><br>
+        <span>Rp 120.000</span><br>
+        <small>10 days finished</small>
+    </div>
+
+    <div class="box">
+        6600 Like <i class="fa-solid fa-thumbs-up"></i><br>
+        <span>Rp 150.000</span><br>
+        <small>10 days finished</small>
+    </div>
+
+</div>
+
+            <div class="cta-box">
+                <p>Order sekarang via WhatsApp</p>
+                <a href="https://wa.me/6285709293122">
+                    <button class="btn">ORDER NOW</button>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- PRICING -->
+<section class="pricing">
+
+    <h2 class="section-title reveal">PILIH PAKET TERBAIK</h2>
+
+    <div class="pricing-container">
+
+
+        <!-- CARD 2 -->
+        <div class="card highlight reveal">
+            <h3>PACK 1</h3>
+            <p>200 LIKE <i class="fa-solid fa-thumbs-up"></i><br> </p>
+            <div class="price">8K</div>
+            <p>Proses 1 Days Finished</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CARA KERJA -->
+<section class="steps">
+
+    <h2 class="section-title reveal">CARA ORDER</h2>
+
+    <div class="step-container">
+
+        <div class="step reveal delay1">Kirim UID</div>
+        <div class="step reveal delay2">Pilih Paket</div>
+        <div class="step reveal delay3">Proses</div>
+        <div class="step reveal delay4">Like Masuk Perhari 200</div>
+
+    </div>
+
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <h2 class="reveal">ORDER SEKARANG 🔥</h2>
+    <p class="reveal">Proses cepat & tanpa login</p>
+
+    <a href="https://wa.me/6285709293122">
+        <button class="btn pulse"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="wa-icon">Hubungi WhatsApp</button>
+    </a>
+</section>
+
+<!-- BACKGROUND EFFECT -->
+<div class="bg-animation"></div>
+<style>
+
+/* SECTION TITLE */
+.section-title{
+    text-align:center;
+    font-family:'Orbitron';
+    font-size:24px;
+    margin-bottom:30px;
+    color:#00f0ff;
+    text-shadow:0 0 10px #00f0ff;
+}
+
+/* Overlay biar teks tetap kebaca */
+
+/* PRICING */
+.pricing{
+    padding:80px 20px;
+}
+
+.pricing-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+/* CARD */
+.card{
+    background:#111827;
+    padding:25px;
+    border-radius:15px;
+    width:250px;
+    text-align:center;
+    transition:0.4s;
+    opacity:0;
+    transform:translateY(50px);
+    box-shadow:0 0 15px rgba(0,255,255,0.2);
+}
+
+.card h3{
+    font-family:'Orbitron';
+    color:#00f0ff;
+}
+
+.price{
+    font-size:28px;
+    margin:15px 0;
+    color:#facc15;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.05);
+    box-shadow:0 0 25px #00f0ff;
+}
+
+/* HIGHLIGHT */
+.highlight{
+    border:2px solid #00f0ff;
+    box-shadow:0 0 25px #00f0ff;
+}
+
+
+
+/* HERO POSTER STYLE */
+.hero-new{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:80px 20px;
+
+    /* BACKGROUND GAMBAR */
+    background: 
+        linear-gradient(rgba(2,6,23,0.7), rgba(2,6,23,0.9)),
+        url('ff.png');
+        
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+/* CONTAINER */
+.hero-container{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    gap:30px;
+}
+
+
+
+/* RIGHT CONTENT */
+.hero-right{
+    max-width:350px;
+    text-align:center;
+}
+
+.tag{
+    background:#1e3a8a;
+    padding:5px 10px;
+    border-radius:10px;
+    display:inline-block;
+    font-size:12px;
+    margin-bottom:10px;
+}
+
+.hero-right h1{
+    font-family:'Orbitron';
+    font-size:28px;
+    color:#00f0ff;
+    text-shadow:0 0 15px #00f0ff;
+}
+
+.hero-right p{
+    color:#ccc;
+    margin-bottom:15px;
+}
+
+/* PRICE GRID */
+.price-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+}
+
+.box{
+    background:#1f2937;
+    padding:10px;
+    border-radius:10px;
+    font-size:14px;
+    box-shadow:0 0 10px rgba(0,255,255,0.2);
+    margin-left: 5px;
+    color: #00ffcc;
+    transition: 0.3s;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+
+/* efek glow icon */
+.box i {
+    text-shadow: 0 0 3px #00ffcc, 0 0 10px #00ffcc;
+    animation: pulse 1.5s infinite;
+}
+
+/* animasi saat disentuh / hover */
+.box:hover,
+.box:active {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0,255,255,0.6);
+}
+
+.box span{
+    color:#facc15;
+    font-weight:bold;
+}
+
+/* CTA */
+.cta-box{
+    margin-top:20px;
+}
+
+.cta-box p{
+    font-size:12px;
+    margin-bottom:10px;
+}
+
+/* MOBILE FIX */
+@media(max-width:768px){
+    .hero-container{
+        flex-direction:column;
+    }
+
+    .hero-left img{
+        width:220px;
+    }
+
+    .hero-right h1{
+        font-size:24px;
+    }
+}
+
+/* REVEAL ANIMATION */
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+    transition:1s;
+}
+
+/* STEPS */
+.steps{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.step-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.step{
+    background:#1f2937;
+    padding:20px;
+    border-radius:10px;
+    width:180px;
+    transition:0.3s;
+    opacity:0;
+    transform:translateY(40px);
+    box-shadow:0 0 10px rgba(0,255,255,0.2);
+}
+
+.step:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 20px #00f0ff;
+}
+
+/* DELAY ANIMATION */
+.delay1{ transition:1s 0.2s; }
+.delay2{ transition:1s 0.4s; }
+.delay3{ transition:1s 0.6s; }
+.delay4{ transition:1s 0.8s; }
+
+/* CTA */
+.cta{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.wa-icon{
+    width:18px;
+    vertical-align:middle;
+    margin-right:8px;
+    background:#25D366;
+    color:white;
+    box-shadow:0 0 15px #25D366;
+}
+
+.cta h2{
+    font-family:'Orbitron';
+    color:#00f0ff;
+    margin-bottom:10px;
+}
+
+.cta p{
+    color:#aaa;
+    margin-bottom:20px;
+}
+
+/* PULSE BUTTON */
+.pulse{
+    animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+    0%{
+        box-shadow:0 0 0 0 rgba(0,240,255,0.7);
+    }
+    70%{
+        box-shadow:0 0 0 20px rgba(0,240,255,0);
+    }
+    100%{
+        box-shadow:0 0 0 0 rgba(0,240,255,0);
+    }
+}
+
+/* BACKGROUND ANIMATION */
+.bg-animation{
+    position:fixed;
+    width:200%;
+    height:200%;
+    background:radial-gradient(circle, rgba(0,240,255,0.05) 10%, transparent 10%);
+    background-size:50px 50px;
+    animation:moveBg 20s linear infinite;
+    top:0;
+    left:0;
+    z-index:-1;
+}
+
+@keyframes moveBg{
+    from{
+        transform:translate(0,0);
+    }
+    to{
+        transform:translate(-100px,-100px);
+    }
+}
+</style>
+
+<script>
+// LOADING EFFECT
+let dots = 3;
+setInterval(()=>{
+    dots = (dots % 5) + 1;
+    document.getElementById("loadingText").innerText = "memuat" + ".".repeat(dots);
+},500);
+
+window.onload = () => {
+    setTimeout(()=>{
+        document.getElementById("loading").style.opacity="0";
+        document.getElementById("loading").style.transition="1s";
+        setTimeout(()=>{
+            document.getElementById("loading").style.display="none";
+
+            // HERO ANIMATION
+            document.getElementById("heroTitle").style.opacity=1;
+            document.getElementById("heroTitle").style.transform="translateY(0)";
+            document.getElementById("heroDesc").style.opacity=1;
+            document.getElementById("heroDesc").style.transform="translateY(0)";
+
+        },1000);
+    },2000);
+}
+
+// SCROLL REVEAL
+function reveal(){
+    let reveals = document.querySelectorAll(".reveal");
+
+    reveals.forEach(el=>{
+        let windowHeight = window.innerHeight;
+        let elementTop = el.getBoundingClientRect().top;
+
+        if(elementTop < windowHeight - 100){
+            el.classList.add("active");
+        }
+    });
+}
+
+window.addEventListener("scroll", reveal);
+</script>
+
+<footer style="text-align:center; padding:20px; color:#666;">
+    © 2026 ZexiStore
+</footer>
+
+</body>
+</html>
